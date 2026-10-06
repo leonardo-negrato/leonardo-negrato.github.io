@@ -155,15 +155,17 @@ h1{
 
 .secondary-actions{
     display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+    flex-wrap:nowrap;
+    gap:8px;
     margin-top:10px;
 }
 
 .secondary-actions .btn{
-    flex:1;
+    flex:1 1 0;
+    min-width:0;
     text-align:center;
-    min-width:110px;
+    padding:12px 8px;
+    white-space:nowrap;
 }
 
 .primary{
