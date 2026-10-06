@@ -128,6 +128,44 @@ h1{
     border:1px solid var(--line)
 }
 
+.contact-action{
+    margin-top:25px;
+}
+
+.contact-btn{
+    display:block;
+    width:100%;
+    padding:15px 20px;
+    border-radius:12px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:700;
+    font-size:15px;
+    background:var(--accent);
+    color:white;
+    border:1px solid var(--accent);
+    box-shadow:0 5px 14px rgba(35,79,111,.20);
+    transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.contact-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(35,79,111,.27);
+}
+
+.secondary-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+}
+
+.secondary-actions .btn{
+    flex:1;
+    text-align:center;
+    min-width:110px;
+}
+
 .primary{
     background:var(--ink);
     color:white;
@@ -303,36 +341,40 @@ Production Planner con 6 anni di esperienza nella Supply Chain e nella pianifica
 
 <!-- PULSANTI -->
 
-<div class="actions">
+<div class="contact-action">
 
-<a class="btn contact-btn"
-   href="Leonardo_Negrato.vcf"
-   download
-   data-it="Salva contatto"
-   data-en="Save contact">
-   Salva contatto
-</a>
+    <a class="contact-btn"
+       href="Leonardo_Negrato.vcf"
+       download
+       data-it="Salva il mio contatto"
+       data-en="Save my contact">
+       Salva il mio contatto
+    </a>
 
-<a class="btn secondary"
-   href="https://www.linkedin.com/in/leonardo-negrato-003608108"
-   target="_blank"
-   rel="noopener">
-   LinkedIn
-</a>
+</div>
 
-<a id="cvButton"
-   class="btn secondary"
-   href="CV_Leonardo_Negrato_IT.pdf"
-   target="_blank"
-   data-it="Scarica CV"
-   data-en="Download CV">
-   Scarica CV
-</a>
+<div class="secondary-actions">
 
-<a class="btn secondary"
-   href="mailto:leonardo.negrato.92@gmail.com">
-   Email
-</a>
+    <a class="btn secondary"
+       href="https://www.linkedin.com/in/leonardo-negrato-003608108"
+       target="_blank"
+       rel="noopener">
+       LinkedIn
+    </a>
+
+    <a id="cvButton"
+       class="btn secondary"
+       href="CV_Leonardo_Negrato_IT.pdf"
+       target="_blank"
+       data-it="Scarica CV"
+       data-en="Download CV">
+       Scarica CV
+    </a>
+
+    <a class="btn secondary"
+       href="mailto:leonardo.negrato.92@gmail.com">
+       Email
+    </a>
 
 </div>
 
