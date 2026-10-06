@@ -78,7 +78,7 @@ Production Planner con 6 anni di esperienza nella Supply Chain e nella pianifica
 
 <div class="actions">
 <a class="btn primary" href="https://www.linkedin.com/in/leonardo-negrato-003608108" target="_blank" rel="noopener">LinkedIn</a>
-<a class="btn secondary" href="CV_Leonardo_Negrato.pdf" target="_blank" data-it="Scarica CV" data-en="Download CV">Scarica CV</a>
+<a id="cvButton" class="btn secondary" href="CV_Leonardo_Negrato.pdf" target="_blank" data-it="Scarica CV" data-en="Download CV">Scarica CV</a>
 <a class="btn secondary" href="mailto:leonardo.negrato.92@gmail.com">Email</a>
 </div>
 
@@ -231,6 +231,11 @@ data-en="© Leonardo Negrato · Professional profile">
 <script>
 function setLanguage(lang) {
     document.documentElement.lang = lang;
+    const cvButton = document.getElementById("cvButton");
+
+    cvButton.href = lang === "en"
+        ? "CV_Leonardo_Negrato_English.pdf"
+        : "CV_Leonardo_Negrato.pdf";
 
     document.querySelectorAll("[data-it][data-en]").forEach(function(element) {
         element.innerHTML = element.getAttribute("data-" + lang);
