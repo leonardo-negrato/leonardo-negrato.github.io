@@ -2,170 +2,341 @@
 
 <html lang="it">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <meta name="description" content="Leonardo Negrato — Production Planner | Supply Chain & Operations Planning">
+
 <title>Leonardo Negrato | Production Planner</title>
 
 <style>
-:root{--ink:#17212b;--muted:#66727d;--line:#e5e9ed;--accent:#234f6f;--bg:#f4f6f7}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
-main{max-width:760px;margin:auto;padding:28px 18px 50px}
-.card{background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 35px rgba(20,30,40,.06)}
-.hero{padding:42px 32px 30px}
-.hero-top{display:flex;justify-content:space-between;align-items:center;gap:15px}
-.eyebrow,h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:700}
-.lang-switch{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;letter-spacing:.08em}
-.lang-btn{border:0;background:none;padding:3px 2px;color:var(--muted);font:inherit;cursor:pointer}
-.lang-btn.active{color:var(--accent)}
-.lang-separator{color:var(--line)}
-h1{font-size:clamp(36px,9vw,54px);line-height:1.02;margin:12px 0 10px;letter-spacing:-.045em}
-.role{font-size:18px;color:var(--accent);font-weight:650;margin:0 0 22px}
-.intro{font-size:17px;max-width:650px;color:#394550;margin:0}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
-.btn{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--line)}
-.primary{background:var(--ink);color:white;border-color:var(--ink)}
-.secondary{background:white;color:var(--ink)}
-section{padding:28px 32px;border-top:1px solid var(--line)}
-h2{margin:0 0 18px}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:13px;background:#fafbfb}
-.exp{margin-bottom:23px}
-.exp:last-child{margin-bottom:0}
-.exp-head{display:flex;justify-content:space-between;gap:15px}
-.exp h3{margin:0;font-size:17px}
-.company{color:var(--accent);font-weight:650;margin-top:3px}
-.date{font-size:12px;color:var(--muted);white-space:nowrap}
-ul{margin:10px 0 0;padding-left:18px;color:#45515b}
-li{margin:5px 0}
-.footer{padding:22px 32px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
-a{color:inherit}
+
+:root{
+    --ink:#17212b;
+    --muted:#66727d;
+    --line:#e5e9ed;
+    --accent:#234f6f;
+    --bg:#f4f6f7
+}
+
+*{
+    box-sizing:border-box
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.55
+}
+
+main{
+    max-width:760px;
+    margin:auto;
+    padding:28px 18px 50px
+}
+
+.card{
+    background:white;
+    border:1px solid var(--line);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(20,30,40,.06)
+}
+
+.hero{
+    padding:42px 32px 30px
+}
+
+.hero-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px
+}
+
+.eyebrow,h2{
+    font-size:12px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:700
+}
+
+.lang-switch{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.08em
+}
+
+.lang-btn{
+    border:0;
+    background:none;
+    padding:3px 2px;
+    color:var(--muted);
+    font:inherit;
+    cursor:pointer
+}
+
+.lang-btn.active{
+    color:var(--accent)
+}
+
+.lang-separator{
+    color:var(--line)
+}
+
+h1{
+    font-size:clamp(36px,9vw,54px);
+    line-height:1.02;
+    margin:12px 0 10px;
+    letter-spacing:-.045em
+}
+
+.role{
+    font-size:18px;
+    color:var(--accent);
+    font-weight:650;
+    margin:0 0 22px
+}
+
+.intro{
+    font-size:17px;
+    max-width:650px;
+    color:#394550;
+    margin:0
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:25px
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 16px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    border:1px solid var(--line)
+}
+
+.primary{
+    background:var(--ink);
+    color:white;
+    border-color:var(--ink)
+}
+
+.secondary{
+    background:white;
+    color:var(--ink)
+}
+
+section{
+    padding:28px 32px;
+    border-top:1px solid var(--line)
+}
+
+h2{
+    margin:0 0 18px
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px
+}
+
+.tag{
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:7px 10px;
+    font-size:13px;
+    background:#fafbfb
+}
+
+.exp{
+    margin-bottom:23px
+}
+
+.exp:last-child{
+    margin-bottom:0
+}
+
+.exp-head{
+    display:flex;
+    justify-content:space-between;
+    gap:15px
+}
+
+.exp h3{
+    margin:0;
+    font-size:17px
+}
+
+.company{
+    color:var(--accent);
+    font-weight:650;
+    margin-top:3px
+}
+
+.date{
+    font-size:12px;
+    color:var(--muted);
+    white-space:nowrap
+}
+
+ul{
+    margin:10px 0 0;
+    padding-left:18px;
+    color:#45515b
+}
+
+li{
+    margin:5px 0
+}
+
+.footer{
+    padding:22px 32px;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:12px
+}
+
+a{
+    color:inherit
+}
 
 @media(max-width:560px){
-.hero,section,.footer{padding-left:22px;padding-right:22px}
-.exp-head{display:block}
-.date{display:block;margin-top:4px}
+
+    .hero,
+    section,
+    .footer{
+        padding-left:22px;
+        padding-right:22px
+    }
+
+    .exp-head{
+        display:block
+    }
+
+    .date{
+        display:block;
+        margin-top:4px
+    }
 }
+
 </style>
 
 </head>
 
 <body>
+
 <main>
+
 <div class="card">
 
 <header class="hero">
 
 <div class="hero-top">
-<div class="eyebrow" data-it="Profilo professionale" data-en="Professional profile">Profilo professionale</div>
+
+<div class="eyebrow"
+     data-it="Profilo professionale"
+     data-en="Professional profile">
+    Profilo professionale
+</div>
 
 <div class="lang-switch" aria-label="Language selection">
-<button class="lang-btn active" id="itBtn" onclick="setLanguage('it')">IT</button>
+
+<button class="lang-btn active"
+        id="itBtn"
+        onclick="setLanguage('it')">
+    IT
+</button>
+
 <span class="lang-separator">|</span>
-<button class="lang-btn" id="enBtn" onclick="setLanguage('en')">EN</button>
+
+<button class="lang-btn"
+        id="enBtn"
+        onclick="setLanguage('en')">
+    EN
+</button>
+
 </div>
+
 </div>
 
 <h1>Leonardo Negrato</h1>
 
-<p class="role">Production Planner · Supply Chain &amp; Operations Planning</p>
-
-<p class="intro"
-data-it="Production Planner con 6 anni di esperienza nella Supply Chain e nella pianificazione della produzione in ambito farmaceutico. Focus su production planning, MRP, SAP, data analytics, digitalizzazione e miglioramento continuo."
-data-en="Production Planner with 6 years of experience in Supply Chain and production planning within the pharmaceutical industry. Focus on production planning, MRP, SAP, data analytics, digitalization and continuous improvement.">
-Production Planner con 6 anni di esperienza nella Supply Chain e nella pianificazione della produzione in ambito farmaceutico. Focus su production planning, MRP, SAP, data analytics, digitalizzazione e miglioramento continuo.
+<p class="role">
+    Production Planner · Supply Chain &amp; Operations Planning
 </p>
 
-<!doctype html>
-
-<html lang="it">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Leonardo Negrato — Production Planner | Supply Chain & Operations Planning">
-<title>Leonardo Negrato | Production Planner</title>
-
-<style>
-:root{--ink:#17212b;--muted:#66727d;--line:#e5e9ed;--accent:#234f6f;--bg:#f4f6f7}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
-main{max-width:760px;margin:auto;padding:28px 18px 50px}
-.card{background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 35px rgba(20,30,40,.06)}
-.hero{padding:42px 32px 30px}
-.hero-top{display:flex;justify-content:space-between;align-items:center;gap:15px}
-.eyebrow,h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:700}
-.lang-switch{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;letter-spacing:.08em}
-.lang-btn{border:0;background:none;padding:3px 2px;color:var(--muted);font:inherit;cursor:pointer}
-.lang-btn.active{color:var(--accent)}
-.lang-separator{color:var(--line)}
-h1{font-size:clamp(36px,9vw,54px);line-height:1.02;margin:12px 0 10px;letter-spacing:-.045em}
-.role{font-size:18px;color:var(--accent);font-weight:650;margin:0 0 22px}
-.intro{font-size:17px;max-width:650px;color:#394550;margin:0}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
-.btn{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--line)}
-.primary{background:var(--ink);color:white;border-color:var(--ink)}
-.secondary{background:white;color:var(--ink)}
-section{padding:28px 32px;border-top:1px solid var(--line)}
-h2{margin:0 0 18px}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:13px;background:#fafbfb}
-.exp{margin-bottom:23px}
-.exp:last-child{margin-bottom:0}
-.exp-head{display:flex;justify-content:space-between;gap:15px}
-.exp h3{margin:0;font-size:17px}
-.company{color:var(--accent);font-weight:650;margin-top:3px}
-.date{font-size:12px;color:var(--muted);white-space:nowrap}
-ul{margin:10px 0 0;padding-left:18px;color:#45515b}
-li{margin:5px 0}
-.footer{padding:22px 32px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
-a{color:inherit}
-
-@media(max-width:560px){
-.hero,section,.footer{padding-left:22px;padding-right:22px}
-.exp-head{display:block}
-.date{display:block;margin-top:4px}
-}
-</style>
-
-</head>
-
-<body>
-<main>
-<div class="card">
-
-<header class="hero">
-
-<div class="hero-top">
-<div class="eyebrow" data-it="Profilo professionale" data-en="Professional profile">Profilo professionale</div>
-
-<div class="lang-switch" aria-label="Language selection">
-<button class="lang-btn active" id="itBtn" onclick="setLanguage('it')">IT</button>
-<span class="lang-separator">|</span>
-<button class="lang-btn" id="enBtn" onclick="setLanguage('en')">EN</button>
-</div>
-</div>
-
-<h1>Leonardo Negrato</h1>
-
-<p class="role">Production Planner · Supply Chain &amp; Operations Planning</p>
-
 <p class="intro"
-data-it="Production Planner con 6 anni di esperienza nella Supply Chain e nella pianificazione della produzione in ambito farmaceutico. Focus su production planning, MRP, SAP, data analytics, digitalizzazione e miglioramento continuo."
-data-en="Production Planner with 6 years of experience in Supply Chain and production planning within the pharmaceutical industry. Focus on production planning, MRP, SAP, data analytics, digitalization and continuous improvement.">
+   data-it="Production Planner con 6 anni di esperienza nella Supply Chain e nella pianificazione della produzione in ambito farmaceutico. Focus su production planning, MRP, SAP, data analytics, digitalizzazione e miglioramento continuo."
+   data-en="Production Planner with 6 years of experience in Supply Chain and production planning within the pharmaceutical industry. Focus on production planning, MRP, SAP, data analytics, digitalization and continuous improvement.">
+
 Production Planner con 6 anni di esperienza nella Supply Chain e nella pianificazione della produzione in ambito farmaceutico. Focus su production planning, MRP, SAP, data analytics, digitalizzazione e miglioramento continuo.
+
 </p>
+
+
+<!-- PULSANTI -->
 
 <div class="actions">
-<a class="btn primary" href="https://www.linkedin.com/in/leonardo-negrato-003608108" target="_blank" rel="noopener">LinkedIn</a>
-<a id="cvButton" class="btn secondary" href="CV_Leonardo_Negrato_IT.pdf" target="_blank" data-it="Scarica CV" data-en="Download CV">Scarica CV</a>
-<a class="btn secondary" href="mailto:leonardo.negrato.92@gmail.com">Email</a>
+
+<a class="btn primary"
+   href="https://www.linkedin.com/in/leonardo-negrato-003608108"
+   target="_blank"
+   rel="noopener">
+   LinkedIn
+</a>
+
+<a class="btn secondary"
+   href="Leonardo_Negrato.vcf"
+   download
+   data-it="Salva contatto"
+   data-en="Save contact">
+   Salva contatto
+</a>
+
+<a id="cvButton"
+   class="btn secondary"
+   href="CV_Leonardo_Negrato_IT.pdf"
+   target="_blank"
+   data-it="Scarica CV"
+   data-en="Download CV">
+   Scarica CV
+</a>
+
+<a class="btn secondary"
+   href="mailto:leonardo.negrato.92@gmail.com">
+   Email
+</a>
+
 </div>
 
 </header>
 
+
+<!-- FOCUS -->
+
 <section>
-<h2 data-it="Focus" data-en="Focus">Focus</h2>
+
+<h2 data-it="Focus"
+    data-en="Focus">
+    Focus
+</h2>
 
 <div class="tags">
+
 <span class="tag">Production Planning</span>
 <span class="tag">Supply Chain</span>
 <span class="tag">SAP PP/MM</span>
@@ -174,358 +345,317 @@ Production Planner con 6 anni di esperienza nella Supply Chain e nella pianifica
 <span class="tag">Data Analytics</span>
 <span class="tag">Production Scheduling</span>
 <span class="tag">Process Improvement</span>
+
 </div>
+
 </section>
+
+
+<!-- ESPERIENZA -->
 
 <section>
 
-<h2 data-it="Esperienza" data-en="Experience">Esperienza</h2>
+<h2 data-it="Esperienza"
+    data-en="Experience">
+    Esperienza
+</h2>
+
 
 <div class="exp">
 
 <div class="exp-head">
+
 <div>
+
 <h3>Production Planner</h3>
-<div class="company">Fresenius Kabi Italia · Isola della Scala, Verona</div>
+
+<div class="company">
+Fresenius Kabi Italia · Isola della Scala, Verona
 </div>
-<div class="date" data-it="06/2020 – Presente" data-en="06/2020 – Present">06/2020 – Presente</div>
+
+</div>
+
+<div class="date"
+     data-it="06/2020 – Presente"
+     data-en="06/2020 – Present">
+06/2020 – Presente
+</div>
+
 </div>
 
 <ul>
+
 <li data-it="Pianificazione di breve e medio periodo di 7 linee produttive e circa 150 SKU."
-data-en="Short- and medium-term planning for 7 production lines and approximately 150 SKUs.">
+    data-en="Short- and medium-term planning for 7 production lines and approximately 150 SKUs.">
 Pianificazione di breve e medio periodo di 7 linee produttive e circa 150 SKU.
 </li>
 
 <li data-it="MRP, capacity planning, material availability e gestione delle criticità di approvvigionamento."
-data-en="MRP, capacity planning, material availability and management of supply-related issues.">
+    data-en="MRP, capacity planning, material availability and management of supply-related issues.">
 MRP, capacity planning, material availability e gestione delle criticità di approvvigionamento.
 </li>
 
 <li data-it="Coordinamento della pianificazione cross-funzionale e supporto ai processi S&amp;OP."
-data-en="Cross-functional planning coordination and support for S&amp;OP processes.">
+    data-en="Cross-functional planning coordination and support for S&amp;OP processes.">
 Coordinamento della pianificazione cross-funzionale e supporto ai processi S&amp;OP.
 </li>
 
 <li data-it="Dashboard Power BI/Excel e sviluppo di strumenti di schedulazione."
-data-en="Power BI/Excel dashboards and development of production scheduling tools.">
+    data-en="Power BI/Excel dashboards and development of production scheduling tools.">
 Dashboard Power BI/Excel e sviluppo di strumenti di schedulazione.
 </li>
 
 <li data-it="Sviluppo di un'applicazione di schedulazione della produzione con supporto di strumenti di IA, utilizzata come MVP."
-data-en="Development of a production scheduling application supported by AI tools, currently used as an MVP.">
+    data-en="Development of a production scheduling application supported by AI tools, currently used as an MVP.">
 Sviluppo di un'applicazione di schedulazione della produzione con supporto di strumenti di IA, utilizzata come MVP.
 </li>
+
 </ul>
 
 </div>
 
+
 <div class="exp">
 
 <div class="exp-head">
+
 <div>
+
 <h3>Quality &amp; HSE</h3>
-<div class="company">Sidel End of Line &amp; Tunnels Solutions S.r.l. · Verona</div>
+
+<div class="company">
+Sidel End of Line &amp; Tunnels Solutions S.r.l. · Verona
 </div>
-<div class="date">10/2018 – 12/2019</div>
+
+</div>
+
+<div class="date">
+10/2018 – 12/2019
+</div>
+
 </div>
 
 <ul>
+
 <li data-it="KPI di qualità e indicatori CTQ; gestione delle non conformità e azioni correttive."
-data-en="Quality KPIs and CTQ indicators; management of non-conformities and corrective actions.">
+    data-en="Quality KPIs and CTQ indicators; management of non-conformities and corrective actions.">
 KPI di qualità e indicatori CTQ; gestione delle non conformità e azioni correttive.
 </li>
 
 <li data-it="Sviluppo di Product Quality Plan, Control Plan, checklist e SOP."
-data-en="Development of Product Quality Plans, Control Plans, checklists and SOPs.">
+    data-en="Development of Product Quality Plans, Control Plans, checklists and SOPs.">
 Sviluppo di Product Quality Plan, Control Plan, checklist e SOP.
 </li>
+
 </ul>
 
 </div>
+
 
 <div class="exp">
 
 <div class="exp-head">
+
 <div>
+
 <h3>Internship – Process Improvement</h3>
-<div class="company">Sidel End of Line &amp; Tunnels Solutions S.r.l. · Verona</div>
+
+<div class="company">
+Sidel End of Line &amp; Tunnels Solutions S.r.l. · Verona
 </div>
-<div class="date">10/2016 – 05/2017</div>
+
+</div>
+
+<div class="date">
+10/2016 – 05/2017
+</div>
+
 </div>
 
 <ul>
+
 <li data-it="Value Stream Mapping dei processi end-to-end per individuare inefficienze nel flusso produttivo."
-data-en="Value Stream Mapping of end-to-end processes to identify inefficiencies in the production flow.">
+    data-en="Value Stream Mapping of end-to-end processes to identify inefficiencies in the production flow.">
 Value Stream Mapping dei processi end-to-end per individuare inefficienze nel flusso produttivo.
 </li>
 
 <li data-it="Progettazione di un sistema di raccolta dati per il controllo statistico del processo."
-data-en="Design of a data collection system for statistical process control.">
+    data-en="Design of a data collection system for statistical process control.">
 Progettazione di un sistema di raccolta dati per il controllo statistico del processo.
 </li>
+
 </ul>
 
 </div>
 
 </section>
 
+
+<!-- FORMAZIONE -->
+
 <section>
 
-<h2 data-it="Formazione" data-en="Education">Formazione</h2>
+<h2 data-it="Formazione"
+    data-en="Education">
+    Formazione
+</h2>
 
 <h3 style="margin:0"
-data-it="Laurea Magistrale in Ingegneria Gestionale"
-data-en="Master's Degree in Management Engineering">
+    data-it="Laurea Magistrale in Ingegneria Gestionale"
+    data-en="Master's Degree in Management Engineering">
 Laurea Magistrale in Ingegneria Gestionale
 </h3>
 
-<div class="company">Università degli Studi di Padova · 2011–2018 · 104/110</div>
+<div class="company">
+Università degli Studi di Padova · 2011–2018 · 104/110
+</div>
 
 </section>
 
+
+<!-- CONTATTI -->
+
 <section>
 
-<h2 data-it="Contatti" data-en="Contact">Contatti</h2>
+<h2 data-it="Contatti"
+    data-en="Contact">
+    Contatti
+</h2>
 
 <p style="margin:0;color:#45515b">
-<a href="mailto:leonardo.negrato.92@gmail.com">leonardo.negrato.92@gmail.com</a><br>
-+39 348 1013941<br>
-<span data-it="Verona, Italia" data-en="Verona, Italy">Verona, Italia</span>
+
+<a href="mailto:leonardo.negrato.92@gmail.com">
+leonardo.negrato.92@gmail.com
+</a>
+
+<br>
+
+<a href="tel:+393481013941">
++39 348 1013941
+</a>
+
+<br>
+
+<span data-it="Verona, Italia"
+      data-en="Verona, Italy">
+Verona, Italia
+</span>
+
 </p>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer class="footer">
+
 <span data-it="© Leonardo Negrato · Profilo professionale"
-data-en="© Leonardo Negrato · Professional profile">
+      data-en="© Leonardo Negrato · Professional profile">
+
 © Leonardo Negrato · Profilo professionale
+
 </span>
+
 </footer>
 
 </div>
+
 </main>
 
+
 <script>
+
 function setLanguage(lang) {
+
     document.documentElement.lang = lang;
+
     const cvButton = document.getElementById("cvButton");
+
+    /*
+    Selezione automatica del CV:
+    IT -> CV italiano
+    EN -> CV inglese
+    */
 
     cvButton.href = lang === "en"
         ? "CV_Leonardo_Negrato_EN.pdf"
         : "CV_Leonardo_Negrato_IT.pdf";
 
+
+    /*
+    Traduce tutti gli elementi che possiedono
+    data-it e data-en
+    */
+
     document.querySelectorAll("[data-it][data-en]").forEach(function(element) {
+
         element.innerHTML = element.getAttribute("data-" + lang);
+
     });
 
-    document.getElementById("itBtn").classList.toggle("active", lang === "it");
-    document.getElementById("enBtn").classList.toggle("active", lang === "en");
 
-    document.title = lang === "it"
-        ? "Leonardo Negrato | Production Planner"
-        : "Leonardo Negrato | Production Planner";
+    /*
+    Evidenzia IT oppure EN
+    */
+
+    document.getElementById("itBtn").classList.toggle(
+        "active",
+        lang === "it"
+    );
+
+    document.getElementById("enBtn").classList.toggle(
+        "active",
+        lang === "en"
+    );
+
+
+    /*
+    Titolo della pagina
+    */
+
+    document.title = "Leonardo Negrato | Production Planner";
+
+
+    /*
+    Salva la lingua selezionata
+    */
 
     try {
-        localStorage.setItem("preferredLanguage", lang);
+
+        localStorage.setItem(
+            "preferredLanguage",
+            lang
+        );
+
     } catch (e) {}
+
 }
 
+
+/*
+All'apertura del sito recupera
+la lingua scelta precedentemente.
+Se non esiste, utilizza italiano.
+*/
+
 (function() {
+
     var savedLanguage = "it";
 
     try {
-        savedLanguage = localStorage.getItem("preferredLanguage") || "it";
+
+        savedLanguage =
+            localStorage.getItem("preferredLanguage") || "it";
+
     } catch (e) {}
 
     setLanguage(savedLanguage);
+
 })();
+
 </script>
 
 </body>
-</html>
 
-</header>
-
-<section>
-<h2 data-it="Focus" data-en="Focus">Focus</h2>
-
-<div class="tags">
-<span class="tag">Production Planning</span>
-<span class="tag">Supply Chain</span>
-<span class="tag">SAP PP/MM</span>
-<span class="tag">MRP</span>
-<span class="tag">Power BI</span>
-<span class="tag">Data Analytics</span>
-<span class="tag">Production Scheduling</span>
-<span class="tag">Process Improvement</span>
-</div>
-</section>
-
-<section>
-
-<h2 data-it="Esperienza" data-en="Experience">Esperienza</h2>
-
-<div class="exp">
-
-<div class="exp-head">
-<div>
-<h3>Production Planner</h3>
-<div class="company">Fresenius Kabi Italia · Isola della Scala, Verona</div>
-</div>
-<div class="date" data-it="06/2020 – Presente" data-en="06/2020 – Present">06/2020 – Presente</div>
-</div>
-
-<ul>
-<li data-it="Pianificazione di breve e medio periodo di 7 linee produttive e circa 150 SKU."
-data-en="Short- and medium-term planning for 7 production lines and approximately 150 SKUs.">
-Pianificazione di breve e medio periodo di 7 linee produttive e circa 150 SKU.
-</li>
-
-<li data-it="MRP, capacity planning, material availability e gestione delle criticità di approvvigionamento."
-data-en="MRP, capacity planning, material availability and management of supply-related issues.">
-MRP, capacity planning, material availability e gestione delle criticità di approvvigionamento.
-</li>
-
-<li data-it="Coordinamento della pianificazione cross-funzionale e supporto ai processi S&amp;OP."
-data-en="Cross-functional planning coordination and support for S&amp;OP processes.">
-Coordinamento della pianificazione cross-funzionale e supporto ai processi S&amp;OP.
-</li>
-
-<li data-it="Dashboard Power BI/Excel e sviluppo di strumenti di schedulazione."
-data-en="Power BI/Excel dashboards and development of production scheduling tools.">
-Dashboard Power BI/Excel e sviluppo di strumenti di schedulazione.
-</li>
-
-<li data-it="Sviluppo di un'applicazione di schedulazione della produzione con supporto di strumenti di IA, utilizzata come MVP."
-data-en="Development of a production scheduling application supported by AI tools, currently used as an MVP.">
-Sviluppo di un'applicazione di schedulazione della produzione con supporto di strumenti di IA, utilizzata come MVP.
-</li>
-</ul>
-
-</div>
-
-<div class="exp">
-
-<div class="exp-head">
-<div>
-<h3>Quality &amp; HSE</h3>
-<div class="company">Sidel End of Line &amp; Tunnels Solutions S.r.l. · Verona</div>
-</div>
-<div class="date">10/2018 – 12/2019</div>
-</div>
-
-<ul>
-<li data-it="KPI di qualità e indicatori CTQ; gestione delle non conformità e azioni correttive."
-data-en="Quality KPIs and CTQ indicators; management of non-conformities and corrective actions.">
-KPI di qualità e indicatori CTQ; gestione delle non conformità e azioni correttive.
-</li>
-
-<li data-it="Sviluppo di Product Quality Plan, Control Plan, checklist e SOP."
-data-en="Development of Product Quality Plans, Control Plans, checklists and SOPs.">
-Sviluppo di Product Quality Plan, Control Plan, checklist e SOP.
-</li>
-</ul>
-
-</div>
-
-<div class="exp">
-
-<div class="exp-head">
-<div>
-<h3>Internship – Process Improvement</h3>
-<div class="company">Sidel End of Line &amp; Tunnels Solutions S.r.l. · Verona</div>
-</div>
-<div class="date">10/2016 – 05/2017</div>
-</div>
-
-<ul>
-<li data-it="Value Stream Mapping dei processi end-to-end per individuare inefficienze nel flusso produttivo."
-data-en="Value Stream Mapping of end-to-end processes to identify inefficiencies in the production flow.">
-Value Stream Mapping dei processi end-to-end per individuare inefficienze nel flusso produttivo.
-</li>
-
-<li data-it="Progettazione di un sistema di raccolta dati per il controllo statistico del processo."
-data-en="Design of a data collection system for statistical process control.">
-Progettazione di un sistema di raccolta dati per il controllo statistico del processo.
-</li>
-</ul>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 data-it="Formazione" data-en="Education">Formazione</h2>
-
-<h3 style="margin:0"
-data-it="Laurea Magistrale in Ingegneria Gestionale"
-data-en="Master's Degree in Management Engineering">
-Laurea Magistrale in Ingegneria Gestionale
-</h3>
-
-<div class="company">Università degli Studi di Padova · 2011–2018 · 104/110</div>
-
-</section>
-
-<section>
-
-<h2 data-it="Contatti" data-en="Contact">Contatti</h2>
-
-<p style="margin:0;color:#45515b">
-<a href="mailto:leonardo.negrato.92@gmail.com">leonardo.negrato.92@gmail.com</a><br>
-+39 348 1013941<br>
-<span data-it="Verona, Italia" data-en="Verona, Italy">Verona, Italia</span>
-</p>
-
-</section>
-
-<footer class="footer">
-<span data-it="© Leonardo Negrato · Profilo professionale"
-data-en="© Leonardo Negrato · Professional profile">
-© Leonardo Negrato · Profilo professionale
-</span>
-</footer>
-
-</div>
-</main>
-
-<script>
-function setLanguage(lang) {
-    document.documentElement.lang = lang;
-    const cvButton = document.getElementById("cvButton");
-
-    cvButton.href = lang === "en"
-        ? "CV_Leonardo_Negrato_EN.pdf"
-        : "CV_Leonardo_Negrato_IT.pdf";
-
-    document.querySelectorAll("[data-it][data-en]").forEach(function(element) {
-        element.innerHTML = element.getAttribute("data-" + lang);
-    });
-
-    document.getElementById("itBtn").classList.toggle("active", lang === "it");
-    document.getElementById("enBtn").classList.toggle("active", lang === "en");
-
-    document.title = lang === "it"
-        ? "Leonardo Negrato | Production Planner"
-        : "Leonardo Negrato | Production Planner";
-
-    try {
-        localStorage.setItem("preferredLanguage", lang);
-    } catch (e) {}
-}
-
-(function() {
-    var savedLanguage = "it";
-
-    try {
-        savedLanguage = localStorage.getItem("preferredLanguage") || "it";
-    } catch (e) {}
-
-    setLanguage(savedLanguage);
-})();
-</script>
-
-</body>
 </html>
